@@ -1,8 +1,7 @@
 import { RingLoader } from "react-spinners";
 import { useState, useEffect } from "react";
-import { auth, styleObj } from "../Firebase";
+import {  db, auth, styleObj } from "../Firebase";
 import { collection, getDocs } from "firebase/firestore";
-import { db } from "../Firebase"; // Ensure this points to your Firestore config
 import { useNavigate, useParams } from "react-router-dom";
 import { onAuthStateChanged } from "firebase/auth";
 import { toast } from "react-toastify";
