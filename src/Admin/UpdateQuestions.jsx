@@ -4,8 +4,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { toast } from "react-toastify";
 import { RingLoader } from "react-spinners";
 import { Timestamp, getDoc, doc, updateDoc, collection, getDocs } from "firebase/firestore";
-import { db } from "../Firebase"; 
-import { styleObj } from "../Firebase"; 
+import { db,styleObj } from "../Firebase"; 
 
 export default function UpdateQuestions() {
   const [question, setQuestion] = useState("");
